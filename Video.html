@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="description" content="">
+			
+			<!-- Mobile viewport optimized -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			<script src="jquery-3.1.1.js"></script>
+			<script src="mustache.js"></script>
+			<!-- Bootstrap CSS -->
+			<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+			<link href="bootstrap/css/styles.css" rel="stylesheet">
+			<link href="bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet">
+			<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+			<!-- Custom CSS -->
+			<script src="one.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			
+			<!-- Include Modernizr in the head, before any other Javascript -->
+		<!--	<script src="includes/js/modernizr-2.6.2.min.js"></script>-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html" >GOMOVIX</a>
+					</div>
+					<div class="navbar-collapse collapse navbar-responsive-collapse vid_sear">
+						<ul class="nav navbar-nav heading navbar-right">
+							<input type="text" name="text" id="name" placeholder="Search movie here.." />
+							<button type="submit" id="search-btn">Search</button> 	
+						</ul>
+					</div><!--End of collapse navbar section-->
+				</div><!--End of header container-->
+			</div><!--End of fixed navbar section-->
+			<div class="error_no">
+			</div>
+			<template id="Details">
+				<div class='row result'>
+					<div class='col-sm-4 col-xs-12'>
+						<p><strong>Title:</strong>{{Title}}</br>
+						<strong>Year:</strong>{{Year}}</br>
+						<strong>Type:</strong>{{Type}}</p>
+					</div>
+					<div class='col-sm-8 col-xs-12'>
+						<img src={{Poster}} alt="" />
+					</div>
+				</div>
+			</template>
+			<template id="noimg">
+				<div class='row result'>
+					<div class='col-sm-4 col-xs-12'>
+						<p><strong>Title:</strong>{{Title}}</br>
+						<strong>Year:</strong>{{Year}}</br>
+						<strong>Type:</strong>{{Type}}</p>
+					</div>
+					<div class='col-sm-8 col-xs-12'>
+						<img src='image/noimg.jpg' alt="" />
+					</div>
+				</div>
+			</template>
+			<div id="data">
+				<div class="row" id="bigcallout">
+					<div class="col-12">
+						<div class="well well-small visible-sm">
+							<h4>Too short..Difficult to read</h4>
+						</div>
+						<div class="well">
+							<img src="image/movie.jpg"/>
+						</div>
+					</div>
+				</div><!--End of bigcallout section-->
+			</div>
+			<div>
+				<button id="prev">Previous</button> <button id="next">Next</button>
+			</div>
+		</div>
+		
+		<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+		
+
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+			
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+		
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Custom JS -->
+		<!--<script src="includes/js/script.js"></script>-->
+	</body>
+</html>

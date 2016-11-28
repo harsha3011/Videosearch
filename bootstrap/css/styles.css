@@ -1,0 +1,45 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+body{
+   background: white; 
+}
+.vid_sear{
+   padding: 20px;
+}
+#data{
+   margin-top: 70px;
+   text-align: center;
+}
+.result img,.noresult img{
+   height: 200px;
+   width: 250px;
+}
+.result,.noresult{
+   margin-bottom :10px;
+   border: 1px solid #ff0000;
+   border-radius: 25px;
+}
+.result p,.noresult p{
+   text-align: center;
+   padding: 60px;
+}
+#bigcallout{
+   text-align: center;
+   margin-top: 60px;
+}
+#prev,#next{
+   margin: 20px;
+}
